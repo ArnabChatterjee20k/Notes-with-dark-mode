@@ -1,3 +1,4 @@
+<!-- headings and hr are given some special class for whiteness during dark mode -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,22 +17,22 @@
             <form class="d-flex">
                 <input class="form-control me-2" id="searchTxt" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="button">Search</button>
+                <button class="btn btn-success mx-4 " type="button" id="darkmode">Dark</button>
             </form>
-            <button class="btn btn-success mx-4 " id="darkmode">Dark Mode</button>
         </div>
     </nav>
 
-    <div class="container my-3">
-        <h3>Add And View Your Notes</h1>
+    <div class="container my-3 dark_bg">
+        <h3 class="white_dark">Add And View Your Notes</h3>
             <div class="card my-3">
-                <div class="card-body">
+                <div class="card-body dark_color">
                     <div class="form-floating">
-                        <textarea class="form-control my-3" placeholder="Leave a comment here" id="addTitle"></textarea>
-                        <label for="floatingTextarea">Title</label>
+                        <textarea class="form-control my-3 note_details" placeholder="Leave a comment here" id="addTitle"></textarea>
+                        <label for="floatingTextarea" class="note_label">Title</label>
                     </div>
                     <div class="form-floating">
-                        <textarea class="form-control my-3" placeholder="Leave a comment here" id="addTxt"></textarea>
-                        <label for="floatingTextarea">Add Note</label>
+                        <textarea class="form-control my-3 note_details" placeholder="Leave a comment here" id="addTxt"></textarea>
+                        <label for="floatingTextarea" class="note_label">Add Note</label>
                     </div>
                     <div class="form-check my-3">
                         <input class="form-check-input" type="checkbox" value="" id="imp_note">
@@ -43,9 +44,11 @@
                 </div>
             </div>
             <div class="noteContainer">
-                <hr>
-                <h3>Your Notes</h3>
-                <hr>
+                <hr class="white_dark">
+
+                <h3 class="white_dark">Your Notes</h3>
+
+                <hr class="white_dark">
                 <div class="row container-fluid" id="notesCard"></div>
             </div>
 
